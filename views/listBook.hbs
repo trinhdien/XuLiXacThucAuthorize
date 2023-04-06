@@ -1,0 +1,22 @@
+<body>
+  <div class="table-responsive">
+    <table class="table table-striped text-center">
+      <thead>
+        <tr>
+          <th>STT</th>
+          <th>tiêu đề</th>
+          <th>Tác Giả</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each books}}
+            <tr>
+              <td>{{addOne @index}}</td>
+              <td>{{this.tieude}}</td>
+              <td>{{this.tacgia}}</td>
+            </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</body>
